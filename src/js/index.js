@@ -4,7 +4,7 @@ import '../styles/main.scss';
 document.getElementById('content').innerHTML = `
   <ul >
     ${tools.map(tool => `
-        <div class='card'>
+    
             <li class="item">
                 <div class='img-container'>
                     <img src="images/${tool.image}"/>
@@ -16,8 +16,7 @@ document.getElementById('content').innerHTML = `
                     <button>Learn more</button>
                 </div>
                 </div>
-            </li>
-        </div>`).join('')}
+            </li>`).join('')}
   </ul>
 `;
 
