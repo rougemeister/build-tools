@@ -3,15 +3,21 @@ import '../styles/main.scss';
 
 document.getElementById('content').innerHTML = `
   <ul >
-    ${tools.map(tool => `<li class="item">
-        <div class='img-container'>
-            <img src="images/${tool.image}"/>
-        </div>
-        <div class='text'>
-        <h2>${tool.name}</h2>
-        <p>${tool.description}</p>
-        </div>
-        </li>`).join('')}
+    ${tools.map(tool => `
+        <div class='card'>
+            <li class="item">
+                <div class='img-container'>
+                    <img src="images/${tool.image}"/>
+                </div>
+                <div class='text'>
+                <h2>${tool.name}</h2>
+                <p>${tool.description}</p>
+                <div class='btn-container'>
+                    <button>Learn more</button>
+                </div>
+                </div>
+            </li>
+        </div>`).join('')}
   </ul>
 `;
 
