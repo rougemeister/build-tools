@@ -1,0 +1,41 @@
+
+[
+    
+  {
+    "name": "Webpack",
+    "description": "A powerful build tool for bundling JavaScript.",
+    "image": "grunt.svg",
+    "link": "https://webpack.js.org/"
+  },
+  {
+    "name": "Vite",
+    "description": "A fast build tool that leverages native ES modules.",
+    "image": "/api/placeholder/100/100",
+    "link": "https://vitejs.dev/"
+  },
+  {
+    "name": "Parcel",
+    "description": "A zero-configuration build tool for web applications.",
+    "image": "/api/placeholder/100/100",
+    "link": "https://parceljs.org/"
+  },
+  {
+    "name": "Rollup",
+    "description": "A module bundler for JavaScript libraries.",
+    "image": "/api/placeholder/100/100",
+    "link": "https://rollupjs.org/"
+  },
+  {
+    "name": "Gulp",
+    "description": "A toolkit for automating time-consuming tasks in development workflow.",
+    "image": "/api/placeholder/100/100",
+    "link": "https://gulpjs.com/"
+  },
+  {
+    "name": "Grunt",
+    "description": "A JavaScript task runner for automation of repetitive tasks.",
+    "image": "/api/placeholder/100/100",
+    "link": "https://gruntjs.com/"
+  }]
+
+
