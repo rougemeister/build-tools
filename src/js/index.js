@@ -13,7 +13,9 @@ document.getElementById('content').innerHTML = `
                 <h2>${tool.name}</h2>
                 <p>${tool.description}</p>
                 <div class='btn-container'>
-                    <button>Learn more</button>
+                    <a href='${tool.link}' target='_blank'>
+                        <button>Learn more</button>
+                    </a>
                 </div>
                 </div>
             </li>`).join('')}

@@ -8,7 +8,7 @@
   {
     "name": "Vite",
     "description": "Vite is a modern build tool that takes advantage of native ES modules for faster development. It features instant server start, lightning-fast hot module replacement, and a highly optimized build process. ",
-    "image": "vite.png",
+    "image": "vite.svg",
     "link": "https://vitejs.dev/"
   },
   {
