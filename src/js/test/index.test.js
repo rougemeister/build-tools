@@ -38,12 +38,11 @@ jest.mock('../tools.json', () => [
     }
   ]);
   
-  // Mock the SCSS import
+
   jest.mock('../../styles/main.scss', () => {});
   
   describe('index.js', () => {
     beforeEach(() => {
-      // Set up the DOM element with id 'content'
       document.body.innerHTML = '<div id="content"></div>';
     });
   
@@ -54,13 +53,11 @@ jest.mock('../tools.json', () => [
     });
   
     test('should set the innerHTML of #content with tools data', () => {
-      // Spy on console.log
       const consoleSpy = jest.spyOn(console, 'log').mockImplementation();
   
-      // Import the module under test
       require('../index');
   
-      // Get the content element
+
       const content = document.getElementById('content');
   
       // Assertions to check if the innerHTML contains expected content for each tool
@@ -94,10 +91,8 @@ jest.mock('../tools.json', () => [
       expect(content.innerHTML).toContain('images/grunt.svg');
       expect(content.innerHTML).toContain('https://gruntjs.com/');
   
-      // Check if console.log was called with the correct argument (first tool's image)
       expect(consoleSpy).toHaveBeenCalledWith('webpack-logo.png');
   
-      // Restore console.log
       consoleSpy.mockRestore();
     });
   });
